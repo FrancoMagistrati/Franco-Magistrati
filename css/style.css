@@ -587,10 +587,13 @@ background-color: aliceblue;
     height: 100%;
     opacity: 0;
     border-radius: 8px;
+    overflow: hidden;
 }
 
 .personajes p{
+    font-size: .8rem;
     text-align: center;
+
 }
 
 .personajes h2{
