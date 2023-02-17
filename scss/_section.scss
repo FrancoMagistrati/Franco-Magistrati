@@ -1,0 +1,272 @@
+/*INDEX*/
+
+main{
+        img{
+            width: 100%;
+        }
+        
+    }
+
+
+
+
+.contenedor{
+    overflow: hidden;
+    .goku img{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width:992px){
+    .contenedor{
+        .goku img{
+            width: 80%;
+        }
+        .parrafo{
+            margin-top:200px;
+        }
+    }
+
+}
+
+/*INDEX*/
+
+/*DRAGON BALL*/
+.DB{
+    .section1mobile{
+        background-image: url(../img/fondowaves.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    section{
+        overflow: hidden;
+    }
+    .section1{
+        background-image: url(../img/fondowaves.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding-bottom: 250px;
+        display: none;
+        h2{
+            padding-top: 30px;
+
+        }
+    }
+    .galeria{
+        background-color: F7770F;
+        width: 100%;
+        img{
+
+            width: 100%;
+
+        }
+    }
+    h2{
+        font-weight:bold; 
+        text-align: center;
+    }
+    @media screen and (max-width:576px) {
+        .galeria{
+            .imagenes{
+                width: 50%;
+            }
+        }
+
+    }
+    @media screen and (min-width:992px) {
+        .section1mobile{
+            display: none;
+        }
+        .section1{
+            display: block;
+        }
+         .personajes{
+            margin-top: 20px;
+            display: flex;
+            width: 100%;
+            height: 430px;
+            align-content: center;
+            img{
+                width: 0px;
+                flex-grow: 1;
+                object-fit: cover;
+                opacity: .8;
+                transition: .8s ease;
+                
+                &:hover{
+                    width: 400px;
+                    opacity: 1;
+                    filter: contrast(120%);
+                }
+                &:hover p{
+                    opacity: 1;
+                }
+            }
+        }
+        
+            .galeria{
+                a img{
+                    transition: all .5s;
+                    &:hover{
+                        transform: scale(1.1);
+                        filter: contrast(160%);
+                        box-shadow: 4px 4px rgba(0, 0, 0, 0.644);
+                    }
+                }
+            }
+
+
+            .fondo2{
+        background-image: url(../img/db2.jpg);
+        width: 100%;
+        height: 100%;
+        margin-top: 5px;
+        background-size: cover;
+        .fotomobile{
+            display: none;
+        }
+        &:hover .info{
+            opacity: 1;
+        }
+        .info{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(31, 31, 31, 0.9);
+            opacity: 0;
+            color:white;
+            position: absolute;
+            transition: all 0.8s ease;
+    
+            p{
+                top: 30%;
+                position: absolute;
+                font-size: 1.5rem;
+            }
+    }
+
+    }
+    }
+
+
+}
+/*NOTICIAS*/
+
+.TN{
+    margin-top: 30px;
+
+}
+
+/*COMUNIDAD*/
+
+  
+  .formulario {
+                    h3{
+                        font-size: 1rem;
+                    }
+                    .SiNo{
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                
+
+                .enviar{
+                    height: 50px;
+                    width: 100px;
+                    align-self: center;
+                    background-color: #111;;
+                    color: white;
+                    border-radius: 10px;
+                    cursor: pointer;
+                    position: relative;
+                    z-index: 0;
+                    &:before{
+                        content: '';
+    background: linear-gradient(45deg, #ff7300, #fffb00, #ff7300, #fffb00,#ff7300, #fffb00,);
+    filter: blur(5px);
+    position: absolute;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    opacity: 0;
+    top: -2px;
+    left: -2px;
+    transition: opacity .3s ease-in-out;
+    background-size: 600%;
+    border-radius: 10px;
+    animation: boton 20s linear infinite;
+    z-index: -1;
+                  
+                    }
+                    &:hover:before{
+                        opacity: 1;
+                        background-color: #111;
+                    }
+                    &:active{
+                        color: black;
+                        &:after{
+                            background: transparent;
+                        }
+                    }
+
+                    &:after{
+                        z-index: -1;
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        background: #111;
+                        left: 0;
+                        top: 0;
+                        border-radius: 10px;
+                    }
+                }
+                }
+
+
+  @keyframes boton {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.publicaciones{
+    .megusta:focus{
+        background-color: blue;
+    }
+    input {
+        display: none;
+      }
+      
+      label {
+        cursor: pointer;
+        border: 2px solid #0aee0a;
+        padding: 2px 9px;
+        font-weight: 900;
+        text-transform: uppercase;
+        transition: 1s;
+        border-radius: 50px;
+        color: #0aee0a;
+      }
+      
+      input:checked + label {
+        border: none;
+        background: #0aee0a;
+        color: white;
+      }
+      .dibujos{
+        background: linear-gradient(45deg, #ff73008e, #fffb0091,#ff7300a2, #fffb008b,);
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+      }
+}
+
+.paginas{
+        a{
+            color: black;
+            &:hover{
+                color: grey;
+            }
+        }
+
+
+}

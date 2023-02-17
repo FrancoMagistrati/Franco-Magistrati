@@ -1,0 +1,104 @@
+footer{
+    background-color: rgb(16, 16, 71);
+    .pie-pagina {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "grupo1"
+          "grupo2"
+          "grupo3"
+          "grupo4";
+            grid-gap:0px;
+            margin: auto;
+          width: 100%;
+        align-items: center;
+    justify-items: center;
+}
+.grupo1 { grid-area: grupo1; }
+      
+.grupo2 { grid-area: grupo2;}
+
+.grupo3 { grid-area: grupo3; 
+
+  }
+
+.grupo4 { grid-area: grupo4; }
+        h3{
+            font-size: 1.3rem;
+            color: $blanco;
+        }
+        .henki{
+            width: 25px;
+        }
+}
+
+@media screen and (min-width:768px) {
+    footer{
+    .pie-pagina {  display: grid;
+        grid-template-columns: 1fr  1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "grupo1 grupo2"
+          "grupo3 grupo4";
+            grid-gap: 0px;
+            margin: auto;
+          width: 100%;
+        align-items: center;
+    justify-items: center;
+}
+.grupo1 { grid-area: grupo1; }
+      
+.grupo2 { grid-area: grupo2;     margin-top: 50px;}
+
+.grupo3 { grid-area: grupo3; 
+
+  }
+
+.grupo4 { grid-area: grupo4; }
+}
+}
+
+
+
+@media screen and (min-width:992px) {
+footer{
+    .pie-pagina {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "grupo1 grupo2 grupo3 grupo4";
+            grid-gap: 50px;
+            margin: auto;
+          width: 100%;
+        align-items: center;
+    justify-items: center;
+}
+      
+      .grupo1 { grid-area: grupo1;margin-left: 100px; }
+      
+      .grupo2 { grid-area: grupo2;     margin: 20px;}
+      
+      .grupo3 { grid-area: grupo3; 
+
+        }
+      
+      .grupo4 { grid-area: grupo4; }
+
+    }
+  
+}
+
+@media screen and (max-width:576px) {
+    footer{
+        .henki{
+           display: none;
+        }
+    }
+    
+}

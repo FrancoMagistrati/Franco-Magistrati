@@ -3,11 +3,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Los fans de Dragon ball pueden dejar sus dibujos y compartirlos">
+        <meta name="keywords" content="dragon ball, dragon ball z, dragon ball super, dibujos de dragon ball, dibujos">
+        
         <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Luckiest+Guy&family=Montserrat:wght@800&display=swap" rel="stylesheet">
-        <title>DRAGON BALL </title>
+        <title>COMUNIDAD </title>
         <link rel="icon" type="images/x-icon" href="../img/bola.png" />
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -17,97 +20,171 @@
     <header>
         <h1>DRAGON BALL</h1>
         <nav class="barra navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                    <a class="nav-link links" aria-current="page" href="../index.html">INICIO</a>
-                  </li>
-                  <li class="f nav-item dropdown">
-                    <a class="nav-link links" href="../secciones/saga.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      SAGAS
-                    </a>
-                    <ul class="e dropdown-menu">
-                        <li><a class="dropdown-item" href="../secciones/saga.html">TODAS</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="../secciones/dragonball.html">DRAGON BALL</a></li>
-                        <li><a class="dropdown-item" href="#">DRAGON BALL Z</a></li>
-                        <li><a class="dropdown-item" href="#">DRAGON BALL SUPER</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link links" href="../secciones/noticias.html">NOTICIAS</a>
-                  </li>
-                  
-                  <li class="nav-item">
-                    <a class="nav-link links" href="../secciones/imagenes.html">COMUNIDAD</a>
-                  </li>
-                </ul>
+          <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="hvr-float-shadow  nav-item">
+                  <a class="nav-link links" aria-current="page" href="../index.html">INICIO</a>
+                </li>
+                <li class="f hvr-float-shadow  nav-item dropdown">
+                  <a class="nav-link links" href="../secciones/saga.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    SAGAS
+                  </a>
+                  <ul class="drop dropdown-menu">
+                      <li><a class="dropdown-item" href="../secciones/saga.html">TODAS</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="../secciones/dragonball.html">DRAGON BALL</a></li>
+                      <li><a class="dropdown-item" href="#">DRAGON BALL Z</a></li>
+                      <li><a class="dropdown-item" href="#">DRAGON BALL SUPER</a></li>
+                  </ul>
+                </li>
+                <li class="hvr-float-shadow  nav-item">
+                  <a class="nav-link links" href="../secciones/noticias.html">NOTICIAS</a>
+                </li>
+                
+                <li class="hvr-float-shadow  nav-item">
+                  <a class="nav-link links" href="../secciones/imagenes.html">COMUNIDAD</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+
+
+        </nav>
+    </header>
+    <main> 
+      <section>
+        <div class="subi">
+          <h2>Subi tus fotos</h2>
+        </div>
+        <div class="container text-center formulario m-auto">
+          <div class="row">
+            <div class="col-md-6 col-lg-3"><div class="mb-3">
+              <input class="form-control" type="file" id="formFile">
+            </div></div>
+            <div class="col-md-6 col-lg-3"><div class="form-floating">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="resize: none; height: 100px;" maxlength="45"></textarea>
+              <label for="floatingTextarea">DEJA TU COMENTARIO</label>
+            </div></div>
+            <div class="col-md-6 col-lg-3">      
+              <div class="row">
+                <div class="col">
+                  <h3>¿Querés que lo publiquemos?</h3>
+                </div>
+                <div class="SiNo col">
+                  <div>
+                    <p>Si</p><input type="radio" name="publicar" value="Si">
+                  </div>
+                  <div>
+                    <p>No</p><input type="radio" name="publicar" value="no">
+                  </div>
+                </div>
+              </div>  
+          </div>
+            <div class="col-md-6 col-lg-3 m-auto w-auto"><button class="enviar">Enviar</button></div>
+          </div>
+        </div>
+        <!---->
+        <div class="row g-4 publicaciones m-auto">
+          <div class="col-lg-6 col-md-6 col-xl-3">
+            <div class="card dibujos">
+              <img src="../img/dibujos/1.jpg" class="card-img-top m-auto mt-3" style="width: 90%;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="input-wrapper">
+                  <input type="radio" name="radio-input" id="radio-01">
+                  <label for="radio-01">✓</label>
+                  <span>1030 likes</span>
+                </div>
+                
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
               </div>
             </div>
-          </nav>
-    </header>
-    <main>  
-        <section class="intro">
-            <div class="dibu">
-                <img src="../img/bola.png" alt="bola">
-                <h2>Subi tus dibujos</h2>
-                <img src="../img/bola.png" alt="bola">
-            </div>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores consequatur laborum repellat quasi quas ut, architecto praesentium! Mollitia totam nemo temporibus rem ratione consequuntur vel quod autem dolor! Quia, rem?
-            Laudantium minima, perspiciatis ea placeat soluta commodi inventore non alias illo voluptates deserunt dolores nostrum quod. Officiis quos maiores corrupti, eligendi error quia, ea debitis ut in, unde quaerat harum.</p>
-            <div class="archivo">
-                <input type="file" >
-
-                <textarea name="Comentario" id="comentario" cols="30" rows="5" placeholder="DEJA TU DESCRIPCIÓN"></textarea>
-                <div class="SiNo">
-                    <h3>¿Querés que lo publiquemos?</h3>
-                    <p>Si</p><input type="radio" name="publicar" value="Si">
-                    <p>No</p><input type="radio" name="publicar" value="no">
+          </div>
+          <div class="col-lg-6 col-md-6 col-xl-3">
+            <div class="card dibujos">
+              <img src="../img/dibujos/2.jpg" class="card-img-top m-auto mt-3" style="width: 90%;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="input-wrapper">
+                  <input type="radio" name="radio-input" id="radio-04">
+                  <label for="radio-04">✓</label>
+                  <span>1030 likes</span>
                 </div>
-                <input class="enviar" type="submit">
+                
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
             </div>
-        </section>
-        <section class="publicaciones">
-            <div class="publicacion">
-                <img src="../img/dibujos/1.jpg" alt="publicacion">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, et? Eum earum molestias sunt labore voluptate voluptatibus odit. Laboriosam saepe doloremque ipsam ullam, quaerat vero nihil aperiam earum quod sunt.</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xl-3">
+            <div class="card dibujos">
+              <img src="../img/dibujos/3.jpg" class="card-img-top m-auto mt-3" style="width: 90%;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="input-wrapper">
+                  <input type="radio" name="radio-input" id="radio-02">
+                  <label for="radio-02">✓</label>
+                  <span>1030 likes</span>
+                </div>
+                
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
             </div>
-            <div class="publicacion">
-                <img src="../img/dibujos/2.jpg"  alt="publicacion">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, et? Eum earum molestias sunt labore voluptate voluptatibus odit. Laboriosam saepe doloremque ipsam ullam, quaerat vero nihil aperiam earum quod sunt.</p>
+          </div>
+          <div class="col-lg-6 col-md-6 col-xl-3">
+            <div class="card dibujos">
+              <img src="../img/dibujos/4.jpg" class="card-img-top m-auto mt-3" style="width: 90%;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                <div class="input-wrapper">
+                  <input type="radio" name="radio-input" id="radio-03">
+                  <label for="radio-03">✓</label>
+                  <span>1030 likes</span>
+                </div>
+                
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+              </div>
             </div>
-            <div class="publicacion">
-                <img src="../img/dibujos/3.jpg" alt="publicacion">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, et? Eum earum molestias sunt labore voluptate voluptatibus odit. Laboriosam saepe doloremque ipsam ullam, quaerat vero nihil aperiam earum quod sunt.</p>
-            </div>
-            <div class="publicacion">
-                <img src="../img/dibujos/4.jpg" alt="publicacion">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, et? Eum earum molestias sunt labore voluptate voluptatibus odit. Laboriosam saepe doloremque ipsam ullam, quaerat vero nihil aperiam earum quod sunt.</p>
-            </div>
-            <div class="publicacion">
-                <img src="../img/dibujos/1.jpg" " alt="publicacion">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, et? Eum earum molestias sunt labore voluptate voluptatibus odit. Laboriosam saepe doloremque ipsam ullam, quaerat vero nihil aperiam earum quod sunt.</p>
-            </div>
-            <div class="publicacion">
-                <img src="../img/dibujos/2.jpg"  alt="publicacion">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, et? Eum earum molestias sunt labore voluptate voluptatibus odit. Laboriosam saepe doloremque ipsam ullam, quaerat vero nihil aperiam earum quod sunt.</p>
-            </div>
-            <div class="publicacion">
-                <img src="../img/dibujos/3.jpg" alt="publicacion">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, et? Eum earum molestias sunt labore voluptate voluptatibus odit. Laboriosam saepe doloremque ipsam ullam, quaerat vero nihil aperiam earum quod sunt.</p>
-            </div>
-            <div class="publicacion">
-                <img src="../img/dibujos/4.jpg" alt="publicacion">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, et? Eum earum molestias sunt labore voluptate voluptatibus odit. Laboriosam saepe doloremque ipsam ullam, quaerat vero nihil aperiam earum quod sunt.</p>
-            </div>
-        </section>
+          </div>
+        </div>
+        
+         
 
+        
+      </section>
 
-
+      <nav aria-label="..." class="paginas mt-4">
+        <ul class="pagination justify-content-center w-100 ">
+          <li class="page-item disabled  ">
+            <a class="page-link">Anterior</a>
+          </li>
+          <li class="page-item active " ><a class="page-link" style="background-color: orange;" href="#">1</a></li>
+          <li class="page-item " aria-current="page">
+            <a class="page-link "href="#">2</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#" style="background-color: rgb(243, 170, 34) ; border: none;">Siguiente</a>
+          </li>
+        </ul>
+      </nav>
 
     </main>
     <footer>
@@ -152,5 +229,6 @@
           </script>
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
           <script src="https://kit.fontawesome.com/e36d1f03dc.js" crossorigin="anonymous"></script>
+          
 </body>
 </html>

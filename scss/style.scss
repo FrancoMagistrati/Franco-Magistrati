@@ -1,0 +1,42 @@
+$Montserrat:'Montserrat', sans-serif;
+$blanco:white;
+$naranja:orange;
+
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: $Montserrat
+}
+
+body{
+    background-image: url(../img/fondogoku.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;}
+
+h2{
+        text-align: center;
+    font-size: 4rem;
+}
+
+
+@media screen and (max-width:450px) {
+    h2{
+        font-size: 2rem;
+    }
+    }
+
+
+
+@import "header";
+@import "section";
+@import "footer";

@@ -1,1072 +1,363 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
-}
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif; }
 
-body{
-    background-image: url(../img/fondogoku.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+body {
+  background-image: url(../img/fondogoku.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
 
+li {
+  list-style: none; }
 
-}
+a {
+  text-decoration: none; }
 
-nav a{
-    font-family: 'Luckiest Guy', cursive;
-}
+h2 {
+  text-align: center;
+  font-size: 4rem; }
 
-/*FONDO*/
+@media screen and (max-width: 450px) {
+  h2 {
+    font-size: 2rem; } }
 
-header h1{
-    display: none;
-}
+header h1 {
+  display: none; }
 
-.fondo img{
-    width: 100%;
-}
+header a {
+  font-family: 'Luckiest Guy', cursive; }
 
+header .barra {
+  background-color: orange !important; }
 
-/*FONDO*/
-
-
-/*BARRA*/
-
-.barra{
-    background-color: rgb(251, 150, 27) !important;
-
-}
-
-@media screen and (min-width:992px){
-
-    .barra li:hover{
-        background-color: #000000;
-        transition: 1s;
-        border-radius: 10px;
-    }
-    .barra li:hover .links{
-        color: white;
-        transition: 1s;
-    }
-    .f:hover .e{
+@media screen and (min-width: 992px) {
+  header .barra {
+    height: 75px; }
+    header .barra a {
+      font-size: 1.2rem; }
+      header .barra a:hover {
+        color: white; }
+    header .barra .hvr-float-shadow {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+      position: relative;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform;
+      transition-property: transform; }
+    header .barra .hvr-float-shadow:before {
+      position: absolute;
+      z-index: -1;
+      content: '';
+      top: 100%;
+      left: 5%;
+      height: 10px;
+      width: 90%;
+      opacity: 0;
+      background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+      background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+      /* W3C */
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-property: transform, opacity;
+      transition-property: transform, opacity; }
+    header .barra .hvr-float-shadow:hover, header .barra .hvr-float-shadow:focus, header .barra .hvr-float-shadow:active {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+      /* move the element up by 5px */ }
+    header .barra .hvr-float-shadow:hover:before, header .barra .hvr-float-shadow:focus:before, header .barra .hvr-float-shadow:active:before {
+      opacity: 1;
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+      /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */ }
+    header .barra .drop {
+      display: none;
+      background: orange; }
+      header .barra .drop a:hover {
+        background-color: white !important;
+        color: black; }
+    header .barra .f {
+      z-index: 1; }
+      header .barra .f:hover .drop {
         display: flex;
-        flex-direction: column;
-    }
-    .e{
-        display: none;
-        background-color: rgb(238, 173, 94);
-    }
+        flex-direction: column; } }
 
-    .info p{
-        font-size: 21px;
-        margin-top: 200px;
-    }
+/*INDEX*/
+main img {
+  width: 100%; }
 
-    .pie{
-        padding-left: 350px;
-    }
-    .asd{
-        width: 100%;
-        align-items: center;
-    }
-    .asd img{
-        width: 100%;
-    }   
-.asd img:hover{
-    transform: scale(90%);
-    transition: .3s;
-}
-.goku img{
+.contenedor {
+  overflow: hidden; }
+  .contenedor .goku img {
+    width: 60%; }
+
+@media screen and (min-width: 992px) {
+  .contenedor .goku img {
+    width: 80%; }
+  .contenedor .parrafo {
+    margin-top: 200px; } }
+
+/*INDEX*/
+/*DRAGON BALL*/
+.DB .section1mobile {
+  background-image: url(../img/fondowaves.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.DB section {
+  overflow: hidden; }
+
+.DB .section1 {
+  background-image: url(../img/fondowaves.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 250px;
+  display: none; }
+  .DB .section1 h2 {
+    padding-top: 30px; }
+
+.DB .galeria {
+  background-color: F7770F;
+  width: 100%; }
+  .DB .galeria img {
+    width: 100%; }
+
+.DB h2 {
+  font-weight: bold;
+  text-align: center; }
+
+@media screen and (max-width: 576px) {
+  .DB .galeria .imagenes {
+    width: 50%; } }
+
+@media screen and (min-width: 992px) {
+  .DB .section1mobile {
+    display: none; }
+  .DB .section1 {
+    display: block; }
+  .DB .personajes {
+    margin-top: 20px;
+    display: flex;
     width: 100%;
-}
-.contenedor p{
-    font-size: 1.2rem;
-}
-
-.pie-pagina {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "grupo1 grupo2 grupo3 grupo4";
-      background-color: 020814;
-        grid-gap: 50px;
-        margin: auto;
-      width: 100%;
-    align-items: center;
-justify-items: center;
-color: white;}
-  
-  .grupo1 { grid-area: grupo1;margin-left: 100px; }
-  
-  .grupo2 { grid-area: grupo2; }
-  
-  .grupo3 { grid-area: grupo3; }
-  
-  .grupo4 { grid-area: grupo4; }
-  
-
-}
-
-
-@media screen and (max-width:992px){
-
-
-.barra .e{
-    background-color: white;
-}
-.parrafo{
-    overflow: hidden;
-    margin-top: 20px;
-
-}
-
-.info p{
-    margin-top: 100px;
-    font-size: 1rem;
-    
-}
-
-.pie{
-    padding-left: 25%;
-}
-.asd img{
-    width: 80%;
-}
-
-.parrafo h2{
-    font-size: 4rem !important;
-}
-
-.goku img{
-    width: 60%;
-}
-.contenedor p{
-    font-size: .5rem;
-}
-.pie-pagina {  display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas:
-      "grupo1 grupo2"
-      "grupo3 grupo4";
-      background-color: 020814;
-        grid-gap: 50px;
-        margin: auto;
-      width: 100%;
-      color: white;
-}
-.grupo1 h3{
-    margin-top: 20px;
-    margin-left: 20px;
-
-}
-.grupo3{
-    margin-left: 20px;
-}
-.e{
-    background-color: rgb(238, 173, 94) !important;
-}
-}
-
-
-
-
-
-
-
-
-.contenedor{
-    overflow: hidden;
-}
-/*
-.barra{
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-image: url(../img/goku3.gif);
-    background-repeat: no-repeat;
-    
-}
-
-.barra .logo img{
-    height: 70px;
-
-}
-
-a{
-    font-size: 21px;
-    color:black;
-    
-}
-
-
-.menu{
-    display: inline;
-    padding-left: 10px;
-    padding-right: 10px;
-    transition:all 0.5s ease;
-    z-index: -1;
-
-
-}
-.menu:hover{
-background-color: black;
-padding: 10px;
-border-radius: 10px;
-
-}
-
-.menu:hover a{
-
-    color: white;
-    
-}
-
-ul{
-    height: 6%;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    
-}
-
-
-li ul {
-    display:none;
-    list-style: none;
-    color: black;
-    transition: 1s;
-}
-
-ul li:hover ul {
-    display: flex;
-    flex-direction: column;
-    margin-left: 80px;
-    width: 12%;
-    height: auto;
-    position: absolute;
-    border: 2px solid;
-    border-radius: 10px;
-    background-color: rgb(234, 158, 17, 0.9);
-    transition: 1s;
-    z-index: 1;
-    
-}       
-
-.menu:hover ul a{
-    color: black !important;
-    transition: 1s;
-    
-
-}
-.menu:hover .submenu{
-    transition: 1s;
-
-
-}
-.submenu:hover{
-    transition: 1s;
-    background-color: white;
-
-}
-
-
-
-a{
-    text-decoration: none;
-}
-
-.buscador{
-    opacity: 0;
-}
-*/
-
-
-/*BARRA*/
-/*MAIN*/
-
-.tituloh1{
-    font-size: 4rem;
-text-align: center;
-}
-
-.parrafo{
-    align-self: center;
-
-}
-
-
-.parrafo h2{
-    font-size: 6rem;
-
-}
-.cartas{
-    overflow: hidden;
-}
-
-.car{
-    margin-left: 3px;
-    margin-right: 3px;
-}
-/*MAIN*/
-/*FOOTER*/
-
-.pie-pagina li{
-    list-style: none;
-}
-.pie-pagina a{
-    text-decoration: none;
-    color: white;
-    font-size: 1rem;
-}
-.henki{
-    width: 25px;
-}
-.grupo2{
-    margin: 20px;
-}
-.grupo1 h3{
-    font-size: 1.3rem;
-}
-
-
-
-/*
-.RedesSociales{
-    display: flex;
-    justify-content: space-evenly; 
-    color: white;
-    padding-top: 30px;
-}
-
-.RedesSociales h3 , p{
-    font-family: 'Balsamiq Sans', cursive;
-    
-}
-
-
-
-.copy{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    
-}
-
-.redes{
-    display: flex;
-    align-items: center;
-    
-}
-
-.copy li{
-    list-style: none;
-}
-
-.copy a{
-    font-family: 'Balsamiq Sans', cursive;
-    color: white;
-    font-size: 12px;
-}
-
-.copy img{
-    width:12px;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
-.redes a{
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    font-family: 'Balsamiq Sans', cursive;
-    color: white;
-
-}
-.redes img{
-    display: flex;
-    align-items: center;
-    width: 20%;
-    margin-left:10px;
-    margin-top: 5px;
-}
-
-.henki{
-    width: 50px;
-}
-*/
-
-/*FOOTER*/
-
-/*SECCION SAGA*/
-/*MAIN*/
-
-
-
-/*SAGA*/
-
-/*.contenedor {  display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 350px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "SagaTituto SagaTituto"
-      "anime texto1"
-      "texto2 anime2"
-      "anime3 texto3";
-  }
-  
-  .anime { grid-area: anime;  margin-left: 100px; }
-  
-  .SagaTituto {
-    padding-top: 200px;
-    justify-self: center;
-    align-self: center;
-    grid-area: SagaTituto;
-  }
-  
-  .texto1 { grid-area: texto1; align-self: center; margin-right: 100px;}
-  
-  .anime2 { grid-area: anime2; justify-self: end;     margin-right: 100px; }
-  
-  .texto2 { grid-area: texto2;align-self: center; margin-left: 100px;}
-
-  .anime3 { grid-area: anime3;  margin-left: 100px; margin-bottom: 200px;}
-
-  .texto3 { grid-area: texto3; align-self: center;margin-right: 100px;}
-
-  .SagaTituto h1{
-    font-size: 100px;
-  }
-
-.anime img{
-
-    width: 600px;
-}
-
-.anime2 img{
-    width: 600px;
-}
-
-.anime3 img{
-    width: 600px;
-}
-
-
-
-.gokus {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1.5fr 1.5fr 1.5fr 1.5fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "gokuniño gokuniño gokuadulto gokuadulto gokuazul gokuazul"
-      "anime anime anime texto1 texto1 texto1"
-      "texto2 texto2 texto2 anime2 anime2 anime2"
-      "anime3 anime3 anime3 texto3 texto3 texto3";
-  }
-  
-  .gokuniño { grid-area: gokuniño; align-self:center; margin-bottom: 200px;}
-  
-  .gokuadulto { grid-area: gokuadulto; justify-self: center; margin-bottom: 200px; }
-  
-  .gokuazul { grid-area: gokuazul;  align-self:center; margin-bottom: 200px; }
-  
-  .anime { grid-area: anime; align-self: center; justify-self: center;}
-  
-  .texto1 { grid-area: texto1; align-self: center; justify-self: center; padding-right: 50px;}
-  
-  .anime2 { grid-area: anime2; align-self: center; justify-self: center;}
-  
-  .texto2 { grid-area: texto2; align-self: center; justify-self: center; padding-left: 50px;}
-  
-  .anime3 { grid-area: anime3; align-self: center; justify-self: center;}
-  
-  .texto3 { grid-area: texto3; align-self: center; justify-self: center; padding-right: 50px;}
-  
-
-  .anime img{
-
-    width: 600px;
-}
-
-.anime2 img{
-    width: 600px;
-}
-
-.anime3 img{
-    width: 600px;
-}
-
-.gokuniño img{
-    width: 430px;
-}
-.gokuadulto img{
-    height: 550px;
-
-}
-.gokuazul img{
-    width: 400px;
-}
-
-
-*/
-.anime{
-width: 100%;
-margin-left: 10px;
-background-color: aliceblue;
-
-}
-.anime img{
-    padding-top: 10px;
-    width: 100%;    
-}
-
-
-
-/*MAIN*/
-
-
-.fondo2{
+    height: 430px;
+    align-content: center; }
+    .DB .personajes img {
+      width: 0px;
+      flex-grow: 1;
+      object-fit: cover;
+      opacity: .8;
+      transition: .8s ease; }
+      .DB .personajes img:hover {
+        width: 400px;
+        opacity: 1;
+        filter: contrast(120%); }
+      .DB .personajes img:hover p {
+        opacity: 1; }
+  .DB .galeria a img {
+    transition: all .5s; }
+    .DB .galeria a img:hover {
+      transform: scale(1.1);
+      filter: contrast(160%);
+      box-shadow: 4px 4px rgba(0, 0, 0, 0.644); }
+  .DB .fondo2 {
     background-image: url(../img/db2.jpg);
     width: 100%;
     height: 100%;
     margin-top: 5px;
-    background-size: cover;
+    background-size: cover; }
+    .DB .fondo2 .fotomobile {
+      display: none; }
+    .DB .fondo2:hover .info {
+      opacity: 1; }
+    .DB .fondo2 .info {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(31, 31, 31, 0.9);
+      opacity: 0;
+      color: white;
+      position: absolute;
+      transition: all 0.8s ease; }
+      .DB .fondo2 .info p {
+        top: 30%;
+        position: absolute;
+        font-size: 1.5rem; } }
 
-}
+/*NOTICIAS*/
+.TN {
+  margin-top: 30px; }
 
-.fondo2:hover .info{
+/*COMUNIDAD*/
+.formulario h3 {
+  font-size: 1rem; }
 
+.formulario .SiNo {
+  display: flex;
+  justify-content: space-around; }
+
+.formulario .enviar {
+  height: 50px;
+  width: 100px;
+  align-self: center;
+  background-color: #111;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 0; }
+  .formulario .enviar:before {
+    content: '';
+    background: linear-gradient(45deg, #ff7300, #fffb00, #ff7300, #fffb00, #ff7300, #fffb00);
+    filter: blur(5px);
+    position: absolute;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    opacity: 0;
+    top: -2px;
+    left: -2px;
+    transition: opacity .3s ease-in-out;
+    background-size: 600%;
+    border-radius: 10px;
+    animation: boton 20s linear infinite;
+    z-index: -1; }
+  .formulario .enviar:hover:before {
     opacity: 1;
-}
-
-.info{
+    background-color: #111; }
+  .formulario .enviar:active {
+    color: black; }
+    .formulario .enviar:active:after {
+      background: transparent; }
+  .formulario .enviar:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgb(31, 31, 31, 0.9);
-    opacity: 0;
-    color:white;
-    text-align: center;
-    position: absolute;
-    transition: all 0.8s ease;
-}
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px; }
 
-.info p{
-    position: absolute;
+@keyframes boton {
+  0% {
+    background-position: 0 0; }
+  50% {
+    background-position: 400% 0; }
+  100% {
+    background-position: 0 0; } }
 
-}
+.publicaciones .megusta:focus {
+  background-color: blue; }
 
+.publicaciones input {
+  display: none; }
 
-/*Personajes*/
-.reparto{
-    border-bottom: 5px solid black;
-}
+.publicaciones label {
+  cursor: pointer;
+  border: 2px solid #0aee0a;
+  padding: 2px 9px;
+  font-weight: 900;
+  text-transform: uppercase;
+  transition: 1s;
+  border-radius: 50px;
+  color: #0aee0a; }
 
-.DB h2{
-    padding-top: 20px;
-    font-family: 'Balsamiq Sans', cursive;
-}
-.TodosLosPersonajes{
-    display: flex;
-    flex-wrap: wrap;
-}
+.publicaciones input:checked + label {
+  border: none;
+  background: #0aee0a;
+  color: white; }
 
+.publicaciones .dibujos {
+  background: linear-gradient(45deg, #ff73008e, #fffb0091, #ff7300a2, #fffb008b);
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2); }
 
-/*CADA PERSONAJE*/
+.paginas a {
+  color: black; }
+  .paginas a:hover {
+    color: grey; }
 
-.personajes{
-    background-color: rgb(31, 31, 31, 0.7);
+footer {
+  background-color: #101047; }
+  footer .pie-pagina {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "grupo1" "grupo2" "grupo3" "grupo4";
+    grid-gap: 0px;
+    margin: auto;
     width: 100%;
-    height: 100%;
-    opacity: 0;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.personajes p{
-    font-size: .8rem;
-    text-align: center;
-
-}
-
-.personajes h2{
-    padding: 10px;
-}
-
-/*PERSONAJES 1*/
-#personaje1{
-    background-image: url(../img/db.jpg);
-    width: 300px;
-    height: 300px;
-    margin: 39px;
-    border: 5px solid white;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-}
-
-#personaje1:hover{
-    border: 5px solid orange;
-    border-radius: 10px;
-    transition: 0.5s ease;
-}
-
-#personaje1:hover .personajes{
-    opacity: 1;
-    color: white;
-    transition: 0.5s;
-}
-
-/*PERSONAJES 2*/
-#personaje2{
-    background-image: url(../img/bulma.jpg);
-    width: 300px;
-    height: 300px;
-    margin: 39px;
-    border: 5px solid white;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-}
-
-#personaje2:hover{
-    border: 5px solid orange;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-#personaje2:hover .personajes{
-    opacity: 1;
-    color: white;
-    transition: 0.5s;
-}
-
-/*PERSONAJES 3*/
-#personaje3{
-    background-image: url(../img/milk.jpg);
-    width: 300px;
-    height: 300px;
-    margin: 39px;
-    border: 5px solid white;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-}
-
-#personaje3:hover{
-    border: 5px solid orange;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-#personaje3:hover .personajes{
-    opacity: 1;
-    color: white;
-    transition: 0.5s;
-}
-
-/*PERSONAJES 4*/
-#personaje4{
-    background-image: url(../img/krilin.jpg);
-    width: 300px;
-    height: 300px;
-    margin: 39px;
-    border: 5px solid white;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-}
-
-#personaje4:hover{
-    border: 5px solid orange;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-#personaje4:hover .personajes{
-    opacity: 1;
-    color: white;
-    transition: 0.5s;
-}
-
-/*PERSONAJES 5*/
-#personaje5{
-    background-image: url(../img/maestroroshi.jpg);
-    width: 300px;
-    height: 300px;
-    margin: 39px;
-    border: 5px solid white;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-}
-
-#personaje5:hover{
-    border: 5px solid orange;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-#personaje5:hover .personajes{
-    opacity: 1;
-    color: white;
-    transition: 0.5s;
-}
-
-
-/*PERSONAJES 6*/
-#personaje6{
-    background-image: url(../img/picorodaimaku.jpg);
-    width: 300px;
-    height: 300px;
-    margin: 39px;
-    border: 5px solid white;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-}
-
-#personaje6:hover{
-    border: 5px solid orange;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-#personaje6:hover .personajes{
-    opacity: 1;
-    color: white;
-    transition: 0.5s;
-}
-
-/*PERSONAJES 7*/
-#personaje7{
-    background-image: url(../img/yamcha.jpg);
-    width: 300px;
-    height: 300px;
-    margin: 39px;
-    border: 5px solid white;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-}
-
-#personaje7:hover{
-    border: 5px solid orange;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-#personaje7:hover .personajes{
-    opacity: 1;
-    color: white;
-    transition: 0.5s;
-}
-
-/*PERSONAJES 8*/
-#personaje8{
-    background-image: url(../img/puar.jpg);
-    width: 300px;
-    height: 300px;
-    margin: 39px;
-    border: 5px solid white;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-}
-
-#personaje8:hover{
-    border: 5px solid orange;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-#personaje8:hover .personajes{
-    opacity: 1;
-    color: white;
-    transition: 0.5s;
-}
-
-/*PERSONAJES 9*/
-#personaje9{
-    background-image: url(../img/oolong.jpg);
-    width: 300px;
-    height: 300px;
-    margin: 39px;
-    border: 5px solid white;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-}
-
-#personaje9:hover{
-    border: 5px solid orange;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-#personaje9:hover .personajes{
-    opacity: 1;
-    color: white;
-    transition: 0.5s;
-}
-
-/*PERSONAJES 10 */
-#personaje10    {
-    background-image: url(../img/ten.jpg);
-    width: 300px;
-    height: 300px;
-    margin: 39px;
-    border: 5px solid white;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-}
-
-#personaje10:hover{
-    border: 5px solid orange;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-#personaje10:hover .personajes{
-    opacity: 1;
-    color: white;
-    transition: 0.5s;
-}
-
-/*PERSONAJES 11 */
-#personaje11{
-    background-image: url(../img/chaos.jpg);
-    width: 300px;
-    height: 300px;
-    margin: 39px;
-    border: 5px solid white;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-}
-
-#personaje11:hover{
-    border: 5px solid orange;
-    border-radius: 10px;
-    transition: 0.5s;
-}
-
-#personaje11:hover .personajes{
-    opacity: 1;
-    color: white;
-    transition: 0.5s;
-}
-
-/*PERSONAJES 12 */
-#personaje12{
-    background-image: url(../img/launch.jpg);
-    width: 300px;
-    height: 300px;
-    margin: 39px;
-    border: 5px solid white;
-    border-radius: 10px;
-    background-size: cover;
-    background-position: center;
-    transition: all 0.5s ease;
-}
-
-#personaje12:hover{
-    border: 5px solid orange;
-    border-radius: 10px;
-    transition: all 0.5s ease;
-
-}
-
-#personaje12:hover .personajes{
-    opacity: 1;
-    color: white;
-    transition: all 0.5s ease;
-
-}
-
-.personajes{
-    transition: all 0.5s ease;
-}
-/*CADA PERSONAJE*/
-
-h2{
-    text-align: center;
-}
-
-/*Personajes*/
-
-/*GALERIA DE IMAGENES*/
-
-.galeria{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    padding: 10px;
     align-items: center;
-}
+    justify-items: center; }
+  footer .grupo1 {
+    grid-area: grupo1; }
+  footer .grupo2 {
+    grid-area: grupo2; }
+  footer .grupo3 {
+    grid-area: grupo3; }
+  footer .grupo4 {
+    grid-area: grupo4; }
+  footer h3 {
+    font-size: 1.3rem;
+    color: white; }
+  footer .henki {
+    width: 25px; }
 
-.galeria img{
-    margin: 35px;
-    width:300px;
-    opacity: .4;
-    border: 5px solid black;
-    border-radius: 4px;
-    align-items: center; 
-    transition: all 1s ease;
-}
-
-.galeria img:hover{
-    opacity: 1;
-    border: 5px solid white;
-    transform: scale(1.3, 1.3);
-
-}
-
-/*GALERIA DE IMAGENES*/
-
-
-/*SECCION COMUNIDAD*/
-
-textarea{
-    resize: none;
-    width: 300px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    font-family: 'Balsamiq Sans', cursive;
-    margin-left: 5px;
-}
-
-.SiNo{
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
-.SiNo p{
-    display: inline;
-}
-.intro h2{
-    text-align: center;
-    font-family: 'Balsamiq Sans', cursive;
-}
-
-.intro p{
-    margin: 10px;
-    margin-bottom: 20px;
-    font-family: 'Balsamiq Sans', cursive;
-}
-
-.intro input{
-    margin: 5px;
-    align-items: top;
-}
-
-.archivo{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 5px;
-}
-
-
-.archivo h3{
-    margin-left: 5px    ;
-}
-
-.publicacion{
-    width: 300px;
-    height: 500px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-    border: 5px solid black;
-    border-radius: 10px;
-    
-}
-
-.publicacion p{
-font-family: 'Balsamiq Sans', cursive;
-padding: 5px;
-border-top: 2px solid black;
-}
-
-.dibu{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.dibu h2{
-    display: inline;
-    font-family: 'Balsamiq Sans', cursive;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.dibu img {
-    width: 15px;
-}
-
-.publicacion img{
-    display: flex;
-    height: 100%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    overflow: hidden;
-}
-.enviar{
-    width: 100px;
-    height: 50px;
-    border-radius: 10px;
-
-}
-
-.enviar:hover{
-    background-color: black;
-    color: white;
-}
-
-.publicaciones{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-}
-
-/*NOTICIAS*/
-
-/*NOTICIAS*/
-
-
-.popup img{
+@media screen and (min-width: 768px) {
+  footer .pie-pagina {
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "grupo1 grupo2" "grupo3 grupo4";
+    grid-gap: 0px;
+    margin: auto;
     width: 100%;
-}
-.asd{
-    overflow: hidden;
-    margin: 20px;
-    padding: 20px;
-}
+    align-items: center;
+    justify-items: center; }
+  footer .grupo1 {
+    grid-area: grupo1; }
+  footer .grupo2 {
+    grid-area: grupo2;
+    margin-top: 50px; }
+  footer .grupo3 {
+    grid-area: grupo3; }
+  footer .grupo4 {
+    grid-area: grupo4; } }
 
-.imgcarrousel img{
+@media screen and (min-width: 992px) {
+  footer .pie-pagina {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "grupo1 grupo2 grupo3 grupo4";
+    grid-gap: 50px;
+    margin: auto;
     width: 100%;
-}
+    align-items: center;
+    justify-items: center; }
+  footer .grupo1 {
+    grid-area: grupo1;
+    margin-left: 100px; }
+  footer .grupo2 {
+    grid-area: grupo2;
+    margin: 20px; }
+  footer .grupo3 {
+    grid-area: grupo3; }
+  footer .grupo4 {
+    grid-area: grupo4; } }
 
-.imgcarrousel{
-    width: 100%;
-}
-
-.TN{
-    font-size: 5rem;
-    margin-left: 25px;
-    margin-top: 40px;
-}
-
-nav .redes{
-    margin-left: 10px;
-}
+@media screen and (max-width: 576px) {
+  footer .henki {
+    display: none; } }
