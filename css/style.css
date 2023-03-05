@@ -32,9 +32,15 @@ header a {
 
 header .barra {
   background-color: orange !important; }
+  header .barra ul {
+    background-color: orange !important; }
+    header .barra ul li ul {
+      background-color: #ffc965 !important; }
 
 @media screen and (min-width: 992px) {
   header .barra {
+    box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.279);
+    z-index: 1;
     height: 75px; }
     header .barra a {
       font-size: 1.2rem; }
@@ -91,6 +97,21 @@ header .barra {
 /*INDEX*/
 main img {
   width: 100%; }
+
+main .fondo {
+  position: relative; }
+  main .fondo .sol {
+    position: relative;
+    z-index: -2; }
+  main .fondo .dragonball {
+    position: absolute;
+    top: -2vh;
+    left: -3%;
+    z-index: -1; }
+    @media screen and (max-width: 576px) {
+      main .fondo .dragonball {
+        top: -2vh;
+        left: -3%; } }
 
 .contenedor {
   overflow: hidden; }
@@ -165,8 +186,7 @@ main img {
     transition: all .5s; }
     .DB .galeria a img:hover {
       transform: scale(1.1);
-      filter: contrast(160%);
-      box-shadow: 4px 4px rgba(0, 0, 0, 0.644); }
+      filter: drop-shadow(8px 8px 10px black) contrast(120%); }
   .DB .fondo2 {
     background-image: url(../img/db2.jpg);
     width: 100%;
@@ -188,13 +208,82 @@ main img {
       .DB .fondo2 .info p {
         top: 30%;
         position: absolute;
-        font-size: 1.5rem; } }
+        font-size: 1.2rem;
+        margin-left: 20px;
+        margin-right: 20px; }
+  .DB .fondo3 {
+    background-image: url(../img/dbz.jpg);
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    background-size: cover; }
+    .DB .fondo3 .fotomobile {
+      display: none; }
+    .DB .fondo3:hover .info {
+      opacity: 1; }
+    .DB .fondo3 .info {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(31, 31, 31, 0.9);
+      opacity: 0;
+      color: white;
+      position: absolute;
+      transition: all 0.8s ease; }
+      .DB .fondo3 .info p {
+        top: 30%;
+        position: absolute;
+        font-size: 1.2rem;
+        margin-left: 20px;
+        margin-right: 20px; }
+  .DB .fondo4 {
+    background-image: url(../img/dbs.jpg);
+    width: 100%;
+    height: 100%;
+    margin-top: 5px;
+    background-size: cover; }
+    .DB .fondo4 .fotomobile {
+      display: none; }
+    .DB .fondo4:hover .info {
+      opacity: 1; }
+    .DB .fondo4 .info {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(31, 31, 31, 0.9);
+      opacity: 0;
+      color: white;
+      position: absolute;
+      transition: all 0.8s ease; }
+      .DB .fondo4 .info p {
+        top: 30%;
+        position: absolute;
+        font-size: 1.2rem;
+        margin-left: 20px;
+        margin-right: 20px; } }
+
+@media screen and (max-width: 992px) {
+  .DB .info {
+    margin: 20px; } }
 
 /*NOTICIAS*/
 .TN {
   margin-top: 30px; }
 
+@media screen and (max-width: 992px) {
+  .textonoticias {
+    display: none; } }
+
+@media screen and (max-width: 767px) {
+  .asd {
+    display: block; } }
+
+.carouselnoticias h3 {
+  font-size: 2vw; }
+
 /*COMUNIDAD*/
+@media screen and (max-width: 991px) {
+  .formulario .pregunta {
+    margin-top: 20px; } }
+
 .formulario h3 {
   font-size: 1rem; }
 
@@ -244,6 +333,9 @@ main img {
     left: 0;
     top: 0;
     border-radius: 10px; }
+  @media screen and (max-width: 991px) {
+    .formulario .enviar {
+      margin-top: 20px; } }
 
 @keyframes boton {
   0% {
@@ -253,8 +345,25 @@ main img {
   100% {
     background-position: 0 0; } }
 
-.publicaciones .megusta:focus {
-  background-color: blue; }
+.modalenviar {
+  background-color: rgba(255, 166, 0, 0.333);
+  text-align: center; }
+  .modalenviar .modalcontenido {
+    background: #ffa84c;
+    /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #ffa84c 0%, #ff7b0d 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #ffa84c 0%, #ff7b0d 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #ffa84c 0%, #ff7b0d 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=1 );
+    /* IE6-9 fallback on horizontal gradient */ }
+    .modalenviar .modalcontenido h3 {
+      font-family: 'Luckiest Guy', cursive; }
+
+.publicaciones .textodibujos {
+  font-size: 1rem; }
 
 .publicaciones input {
   display: none; }
@@ -282,6 +391,97 @@ main img {
   color: black; }
   .paginas a:hover {
     color: grey; }
+
+/*SAGA*/
+.enfrentamiento {
+  overflow: hidden; }
+  .enfrentamiento .car .portada {
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.9);
+    background-color: #ff730086; }
+    .enfrentamiento .car .portada .vermas {
+      height: 35px;
+      width: 100px;
+      background-color: #111;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+      z-index: 0; }
+      .enfrentamiento .car .portada .vermas:before {
+        content: '';
+        background: linear-gradient(45deg, #ff7300, #fffb00, #ff7300, #fffb00, #ff7300, #fffb00);
+        filter: blur(5px);
+        position: absolute;
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        opacity: 0;
+        top: -2px;
+        left: -2px;
+        transition: opacity .3s ease-in-out;
+        background-size: 600%;
+        border-radius: 10px;
+        animation: boton 20s linear infinite;
+        z-index: -1; }
+      .enfrentamiento .car .portada .vermas:hover:before {
+        opacity: 1;
+        background-color: #111; }
+      .enfrentamiento .car .portada .vermas:active {
+        color: black; }
+        .enfrentamiento .car .portada .vermas:active:after {
+          background: transparent; }
+      .enfrentamiento .car .portada .vermas:after {
+        z-index: -1;
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #111;
+        left: 0;
+        top: 0;
+        border-radius: 10px; }
+  .enfrentamiento .saga {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "gokup tsaga vegetap";
+    align-items: center;
+    width: 100%;
+    background-image: url(../img/fondosaga.jpg);
+    background-size: cover; }
+  .enfrentamiento .gokup {
+    grid-area: gokup; }
+  .enfrentamiento .tsaga {
+    grid-area: tsaga;
+    transform: translate(0%, 0%);
+    overflow: hidden;
+    background-color: black;
+    width: 100%; }
+    .enfrentamiento .tsaga h2 {
+      font-size: 8vw;
+      color: #fff;
+      font-weight: bold; }
+      .enfrentamiento .tsaga h2::before {
+        content: 'SAGAS';
+        position: absolute;
+        mix-blend-mode: difference;
+        filter: blur(0.1vw); }
+    .enfrentamiento .tsaga .aa {
+      position: absolute;
+      top: -100%;
+      left: -100%;
+      right: 0;
+      bottom: 0;
+      mix-blend-mode: color-dodge;
+      background: radial-gradient(circle, white, orange 60%) center/25% 25%;
+      animation: neon 3s linear infinite; }
+
+@keyframes neon {
+  to {
+    transform: translate(50%, 50%); } }
+  .enfrentamiento .vegetap {
+    grid-area: vegetap; }
 
 footer {
   background-color: #101047; }
@@ -360,4 +560,8 @@ footer {
 
 @media screen and (max-width: 576px) {
   footer .henki {
-    display: none; } }
+    display: none; }
+  .grupo1 {
+    grid-area: grupo1; }
+    .grupo1 h3 {
+      font-size: 4vw; } }

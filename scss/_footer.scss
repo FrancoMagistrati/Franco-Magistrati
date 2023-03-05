@@ -21,6 +21,8 @@ footer{
 .grupo2 { grid-area: grupo2;}
 
 .grupo3 { grid-area: grupo3; 
+  
+
 
   }
 
@@ -78,9 +80,13 @@ footer{
           width: 100%;
         align-items: center;
     justify-items: center;
+
 }
       
-      .grupo1 { grid-area: grupo1;margin-left: 100px; }
+      .grupo1 { grid-area: grupo1; margin-left: 100px; 
+
+ 
+       }
       
       .grupo2 { grid-area: grupo2;     margin: 20px;}
       
@@ -100,5 +106,11 @@ footer{
            display: none;
         }
     }
-    
-}
+    .grupo1 { grid-area: grupo1;
+      h3{
+        font-size: 4vw;
+      }
+  }
+ 
+    }
+

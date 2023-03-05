@@ -37,8 +37,8 @@
                       <li><a class="dropdown-item" href="../secciones/saga.html">TODAS</a></li>
                       <li><hr class="dropdown-divider"></li>
                       <li><a class="dropdown-item" href="../secciones/sagadragonball.html">DRAGON BALL</a></li>
-                      <li><a class="dropdown-item" href="#">DRAGON BALL Z</a></li>
-                      <li><a class="dropdown-item" href="#">DRAGON BALL SUPER</a></li>
+                      <li><a class="dropdown-item" href="../secciones/sagadragonballz.html">DRAGON BALL Z</a></li>
+                      <li><a class="dropdown-item" href="../secciones/sagadragonballsuper.html">DRAGON BALL SUPER</a></li>
                   </ul>
                 </li>
                 <li class="hvr-float-shadow  nav-item">
@@ -60,7 +60,7 @@
     <main> 
       <section>
         <div class="subi">
-          <h2>Subi tus fotos</h2>
+          <h2>Subí tus fotos</h2>
         </div>
         <div class="container text-center formulario m-auto">
           <div class="row">
@@ -71,7 +71,7 @@
               <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="resize: none; height: 100px;" maxlength="45"></textarea>
               <label for="floatingTextarea">DEJA TU COMENTARIO</label>
             </div></div>
-            <div class="col-md-6 col-lg-3">      
+            <div class="col-md-6 col-lg-3 pregunta">      
               <div class="row">
                 <div class="col">
                   <h3>¿Querés que lo publiquemos?</h3>
@@ -86,7 +86,21 @@
                 </div>
               </div>  
           </div>
-            <div class="col-md-6 col-lg-3 m-auto w-auto"><button class="enviar">Enviar</button></div>
+            <div class="col-md-6 col-lg-3 m-auto w-auto"><button class="enviar" data-bs-toggle="modal" data-bs-target="#enviar">Enviar</button></div>
+          </div>
+        </div>
+        <!--MODAL-->
+        <div class="modal fade modalenviar" id="enviar" tabindex="-1" aria-labelledby="enviar" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content modalcontenido">
+              <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h3>EL MUNDO SAYAYIN AGRADECE TU CREATIVIDAD!!</h3>
+                <img src="../img/gokufeliz.jpg" alt="gokufeliz">
+              </div>
+            </div>
           </div>
         </div>
         <!---->
@@ -94,72 +108,78 @@
           <div class="col-lg-6 col-md-6 col-xl-3">
             <div class="card dibujos">
               <img src="../img/dibujos/1.jpg" class="card-img-top m-auto mt-3" style="width: 90%;" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="card-body textodibujos">
+                <h5 class="card-title">Goku ssj blue</h5>
+                <p class="card-text">Coloreado que hice del ssj blue tratando de replicar al que se vio en la película  (Como me encanta KUBOTAAAA) </p>
+                <p class="card-text">@Lawliet_Artt</p> 
+
                 <div class="input-wrapper">
                   <input type="radio" name="radio-input" id="radio-01">
                   <label for="radio-01">✓</label>
-                  <span>1030 likes</span>
+                  <span>2578 Me gusta</span>
                 </div>
                 
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Subido hace 3 semanas</small>
               </div>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-xl-3">
             <div class="card dibujos">
               <img src="../img/dibujos/2.jpg" class="card-img-top m-auto mt-3" style="width: 90%;" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="card-body textodibujos">
+                <h5 class="card-title">Vegeta ssj3 vs Baby</h5>
+                <p class="card-text">Dibuje esta página de Vegeta ssj3 vs Baby, en esta cuenta subo en su mayoría coloreados por eso no muestro muchos dibujos </p>
+                <p class="card-text">@Lawliet_Artt</p> 
                 <div class="input-wrapper">
                   <input type="radio" name="radio-input" id="radio-04">
                   <label for="radio-04">✓</label>
-                  <span>1030 likes</span>
+                  <span>598 Me gusta</span>
                 </div>
                 
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Subido hace 1 mes</small>
               </div>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-xl-3">
             <div class="card dibujos">
               <img src="../img/dibujos/3.jpg" class="card-img-top m-auto mt-3" style="width: 90%;" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="card-body textodibujos">
+                <h5 class="card-title">Trunks ssj </h5>
+                <p class="card-text">Coloreado rápido antes irme a dormir.</p>
+                <p class="card-text">@Lawliet_Artt</p> 
                 <div class="input-wrapper">
                   <input type="radio" name="radio-input" id="radio-02">
                   <label for="radio-02">✓</label>
-                  <span>1030 likes</span>
+                  <span>390 Me gusta</span>
                 </div>
                 
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Subido hace 3 días</small>
               </div>
             </div>
           </div>
           <div class="col-lg-6 col-md-6 col-xl-3">
-            <div class="card dibujos">
+            <div class="card dibujos ">
               <img src="../img/dibujos/4.jpg" class="card-img-top m-auto mt-3" style="width: 90%;" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <div class="card-body textodibujos">
+                <h5 class="card-title">Black Freezer</h5>
+                <p class="card-text"> 
+                  Se que llegó tarde pero igual les muestro mi versión a color de la nueva transformacion de freezer la verdad quería hacerle un aura más detallada pero mi celular no lo soportaba aún así en futuros coloreados le pondré más detalle. 
+                  <p class="card-text">@Lawliet_Artt</p> 
                 <div class="input-wrapper">
                   <input type="radio" name="radio-input" id="radio-03">
                   <label for="radio-03">✓</label>
-                  <span>1030 likes</span>
+                  <span>1390 Me gusta</span>
                 </div>
                 
               </div>
               <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+                <small class="text-muted">Subido hace 1 semanas</small>
               </div>
             </div>
           </div>
@@ -197,19 +217,19 @@
                         
               <li><a href="../index.html">INICIO</a></li>
               <li><a href="../secciones/saga.html">SAGA</a></li>
+              <li><a href="../secciones/noticias.html">NOTICIAS</a></li>
               <li><a href="../secciones/imagenes.html">COMUNIDAD</a></li>
-              <li><a href="../secciones/comenta.html">CONTACTO</a></li>
             </ul>
           </div>
     
           <div class="grupo3">
-            <a href="" class="btn btn-danger">
+            <a target="_blank" href="" class="btn btn-danger">
               <i class="fa-brands fa-instagram"></i>
             </a>
-            <a href="" class="btn btn-primary">
+            <a target="_blank" href="" class="btn btn-primary">
               <i class="fa-brands fa-facebook"></i>
             </a>
-            <a href="" class="btn btn-info">
+            <a target="_blank" href="" class="btn btn-info">
               <i class="fa-brands fa-twitter"></i>
             </a>
           </div>

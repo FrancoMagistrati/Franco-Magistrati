@@ -10,12 +10,23 @@ header{
 
     .barra{
         background-color: $naranja !important;
+        ul{
+            background-color: $naranja !important;
+            li{
+                ul{
+                    background-color: rgb(255, 201, 101) !important;
+                }
+            }
+
+        }
     }
 
 
 
 @media screen and (min-width:992px){
     .barra{
+        box-shadow: inset 0px 0px 15px 5px rgba(0, 0, 0, 0.279);
+            z-index: 1;
             height: 75px;
             a{
             font-size: 1.2rem;

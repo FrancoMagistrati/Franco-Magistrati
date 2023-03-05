@@ -4,6 +4,28 @@ main{
         img{
             width: 100%;
         }
+
+    
+        .fondo{
+            position: relative;
+            .sol{
+                position: relative;
+                z-index: -2;
+    
+            }
+            .dragonball{
+                position: absolute;
+                top:-2vh;
+                left:-3%;
+                z-index: -1;
+                @media screen and (max-width:576px) {
+                    top:-2vh;
+                    left:-3%;
+        
+                }
+            }
+
+        }
         
     }
 
@@ -12,7 +34,9 @@ main{
 
 .contenedor{
     overflow: hidden;
+    
     .goku img{
+
         width: 60%;
     }
 }
@@ -67,6 +91,7 @@ main{
         font-weight:bold; 
         text-align: center;
     }
+    
     @media screen and (max-width:576px) {
         .galeria{
             .imagenes{
@@ -111,8 +136,7 @@ main{
                     transition: all .5s;
                     &:hover{
                         transform: scale(1.1);
-                        filter: contrast(160%);
-                        box-shadow: 4px 4px rgba(0, 0, 0, 0.644);
+                        filter: drop-shadow(8px 8px 10px rgb(0, 0, 0)) contrast(120%);
                     }
                 }
             }
@@ -138,17 +162,92 @@ main{
             color:white;
             position: absolute;
             transition: all 0.8s ease;
-    
+
             p{
                 top: 30%;
                 position: absolute;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
+                margin-left: 20px;
+                margin-right: 20px;
+                
+        
+            }
+    }
+
+    }
+    .fondo3{
+        background-image: url(../img/dbz.jpg);
+        width: 100%;
+        height: 100%;
+        margin-top: 5px;
+        background-size: cover;
+        .fotomobile{
+            display: none;
+        }
+        &:hover .info{
+            opacity: 1;
+        }
+        .info{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(31, 31, 31, 0.9);
+            opacity: 0;
+            color:white;
+            position: absolute;
+            transition: all 0.8s ease;
+
+            p{
+                top: 30%;
+                position: absolute;
+                font-size: 1.2rem;
+                margin-left: 20px;
+                margin-right: 20px;
+                
+        
+            }
+    }
+
+    }
+    .fondo4{
+        background-image: url(../img/dbs.jpg);
+        width: 100%;
+        height: 100%;
+        margin-top: 5px;
+        background-size: cover;
+        .fotomobile{
+            display: none;
+        }
+        &:hover .info{
+            opacity: 1;
+        }
+        .info{
+            width: 100%;
+            height: 100%;
+            background-color: rgba(31, 31, 31, 0.9);
+            opacity: 0;
+            color:white;
+            position: absolute;
+            transition: all 0.8s ease;
+
+            p{
+                top: 30%;
+                position: absolute;
+                font-size: 1.2rem;
+                margin-left: 20px;
+                margin-right: 20px;
+                
+        
             }
     }
 
     }
     }
+    @media screen and (max-width:992px) {
+        .info{
+            margin:20px;
+        }
 
+    }
 
 }
 /*NOTICIAS*/
@@ -157,11 +256,35 @@ main{
     margin-top: 30px;
 
 }
+@media screen and (max-width:992px) {
+    .textonoticias{
+        display: none;
+    }
+    
+}
+@media screen and (max-width:767px) {
+    .asd{
+            display: block;
 
+}
+    
+}
+    .carouselnoticias{
+            h3{
+                font-size: 2vw ;
+            }
+
+}
 /*COMUNIDAD*/
 
   
   .formulario {
+                    .pregunta{
+                        @media screen and (max-width:991px) {
+                            margin-top: 20px;
+                            
+                        }
+                    }
                     h3{
                         font-size: 1rem;
                     }
@@ -220,7 +343,12 @@ main{
                         top: 0;
                         border-radius: 10px;
                     }
+                    @media screen and (max-width:991px) {
+                        margin-top: 20px;
+                        
+                    }
                 }
+
                 }
 
 
@@ -229,11 +357,27 @@ main{
     50% { background-position: 400% 0; }
     100% { background-position: 0 0; }
 }
+.modalenviar{
+    background-color: rgba(255, 166, 0, 0.333);
+    text-align: center;
+        .modalcontenido{
+            background: rgb(255,168,76); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(255,168,76,1) 0%, rgba(255,123,13,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center, rgba(255,168,76,1) 0%,rgba(255,123,13,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffa84c', endColorstr='#ff7b0d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+            h3{
+                font-family: 'Luckiest Guy', cursive;
+            }
+        }
+
+}
 
 .publicaciones{
-    .megusta:focus{
-        background-color: blue;
-    }
+.textodibujos{
+    font-size: 1rem;
+}
+
     input {
         display: none;
       }
@@ -269,4 +413,125 @@ main{
         }
 
 
+}
+
+
+
+/*SAGA*/
+.enfrentamiento{
+    overflow: hidden;
+    
+    .car{
+        .portada{
+            box-shadow: inset 0px 0px 10px rgba(0,0,0,0.9);
+            background-color: #ff730086;
+            .vermas{
+
+                height: 35px;
+                width: 100px;
+                background-color: #111;
+                color: white;
+                border-radius: 10px;
+                cursor: pointer;
+                position: relative;
+                z-index: 0;
+                &:before{
+                    content: '';
+background: linear-gradient(45deg, #ff7300, #fffb00, #ff7300, #fffb00,#ff7300, #fffb00,);
+filter: blur(5px);
+position: absolute;
+width: calc(100% + 4px);
+height: calc(100% + 4px);
+opacity: 0;
+top: -2px;
+left: -2px;
+transition: opacity .3s ease-in-out;
+background-size: 600%;
+border-radius: 10px;
+animation: boton 20s linear infinite;
+z-index: -1;
+              
+                }
+                &:hover:before{
+                    opacity: 1;
+                    background-color: #111;
+                }
+                &:active{
+                    color: black;
+                    &:after{
+                        background: transparent;
+                    }
+                }
+
+                &:after{
+                    z-index: -1;
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    background: #111;
+                    left: 0;
+                    top: 0;
+                    border-radius: 10px;
+                }
+            }
+        }
+        
+    }
+      
+
+
+    .saga {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "gokup tsaga vegetap";
+          align-items: center;
+        width: 100%;
+        background-image: url(../img/fondosaga.jpg);
+        background-size: cover;
+      }
+      
+      .gokup { grid-area: gokup;    }
+      
+      .tsaga { grid-area: tsaga; 
+
+        transform: translate(0%, 0%);
+        overflow: hidden;
+        background-color: black;
+        width: 100%;
+        h2{
+        font-size:8vw;
+        color: #fff;
+        font-weight: bold;
+            &::before{
+                content: 'SAGAS';
+                position: absolute;
+                mix-blend-mode: difference;
+                filter: blur(.1vw);
+            }
+            }
+            .aa{
+                position: absolute;
+                top: -100%;
+                left: -100%;
+                right: 0;
+                bottom: 0;
+                mix-blend-mode:color-dodge;
+                background: radial-gradient(circle,white,orange 60%) 
+                            center / 25% 25%;
+                animation: neon 3s linear infinite;
+            }
+            @keyframes neon{
+                to{
+                    transform: translate(50%, 50%);
+                }
+            }
+    }
+      
+      .vegetap { grid-area: vegetap;  }
+      
+      
 }
