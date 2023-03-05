@@ -439,6 +439,8 @@ main .fondo {
         left: 0;
         top: 0;
         border-radius: 10px; }
+    .enfrentamiento .car .portada a {
+      color: white; }
   .enfrentamiento .saga {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
